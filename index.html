@@ -43,8 +43,14 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Sign in</button>
-                            <button class="dropdown-item" type="button">Sign up</button>
+                            <button class="dropdown-item" type="button" onclick="redirectToPage()">Sign in</button>
+                            <button class="dropdown-item" type="button" onclick="redirectToPage()">Sign up</button>
+                            <script>
+                                function redirectToPage() {
+                                    // Redirect to the desired page
+                                    window.location.href = "signup.html";
+                                }
+                            </script>
                         </div>
                     </div>
                     <div class="btn-group mx-2">
